@@ -1,0 +1,43 @@
+{
+ "sessions": 28,
+ "sessions_triggering": 24,
+ "trigger_tokens": 2000,
+ "instruction_tokens_assumed": 400,
+ "retry_share_assumed": 0.25,
+ "summarizer_input_tokens": 2076295,
+ "summarizer_input_tokens_first_attempt": 1712617,
+ "summarizer_input_tokens_retry_budget": 363678,
+ "total_middle_tokens": 2297969,
+ "total_middle_after_v1_tokens": 1703618,
+ "token_method": "estimate (chars/4, no tokenizer installed)",
+ "rates": {
+  "contributor_usd_per_1m": {
+   "in": 0.1,
+   "out": 0.2,
+   "label": "contributor tier"
+  },
+  "standard_usd_per_1m": {
+   "in": 1.25,
+   "out": 4.25,
+   "label": "standard tier"
+  }
+ },
+ "sensitivity_output_ratio": {
+  "5%": {
+   "summarizer_output_tokens": 103814,
+   "cost_contributor_usd": 0.2284,
+   "cost_standard_usd": 3.0366
+  },
+  "10%": {
+   "summarizer_output_tokens": 207629,
+   "cost_contributor_usd": 0.2492,
+   "cost_standard_usd": 3.4778
+  },
+  "20%": {
+   "summarizer_output_tokens": 415259,
+   "cost_contributor_usd": 0.2907,
+   "cost_standard_usd": 4.3602
+  }
+ },
+ "note": "Estimate only, for approval sizing. No model called. Output ratio and retry share are assumptions; input tokens are measured from the corpus as chars/4 estimates. A real pilot prices from API-returned usage."
+}

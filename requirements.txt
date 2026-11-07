@@ -1,0 +1,12 @@
+# ServeCompact dependencies. The core proxy and v1 pipeline are
+# stdlib-only; these are optional extras for v2.
+#
+# tiktoken: measured token counting (cl100k_base) for OpenAI-shaped
+# models. Without it, Counter.for_model falls back to the chars/4
+# estimate and says so in its method label.
+tiktoken==0.14.0
+#
+# litellm[proxy]: the LiteLLM guardrail adapter and its proxy smoke
+# test. The bare `litellm` package lacks the proxy's `websockets`
+# dependency; install the [proxy] extra. Tested version: 1.108.1.
+litellm[proxy]==1.108.1
